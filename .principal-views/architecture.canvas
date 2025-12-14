@@ -1,0 +1,609 @@
+{
+  "nodes": [
+    {
+      "id": "user-interface",
+      "type": "text",
+      "x": 100,
+      "y": 200,
+      "width": 180,
+      "height": 100,
+      "text": "User Interface\n\nPython SDK & CLI",
+      "pv": {
+        "nodeType": "interface",
+        "shape": "rectangle",
+        "fill": "#3b82f6",
+        "stroke": "#1d4ed8",
+        "icon": "Terminal",
+        "sources": ["pixeltable/__init__.py"]
+      }
+    },
+    {
+      "id": "catalog",
+      "type": "text",
+      "x": 320,
+      "y": 200,
+      "width": 180,
+      "height": 100,
+      "text": "Catalog\n\nTable & View Management",
+      "pv": {
+        "nodeType": "service",
+        "shape": "rectangle",
+        "fill": "#10b981",
+        "stroke": "#059669",
+        "icon": "Database",
+        "sources": ["pixeltable/catalog/**"]
+      }
+    },
+    {
+      "id": "type-system",
+      "type": "text",
+      "x": 320,
+      "y": 50,
+      "width": 180,
+      "height": 100,
+      "text": "Type System\n\nMultimodal Types",
+      "pv": {
+        "nodeType": "module",
+        "shape": "rectangle",
+        "fill": "#8b5cf6",
+        "stroke": "#7c3aed",
+        "icon": "Type",
+        "sources": ["pixeltable/type_system.py"]
+      }
+    },
+    {
+      "id": "query-planner",
+      "type": "text",
+      "x": 540,
+      "y": 200,
+      "width": 180,
+      "height": 100,
+      "text": "Query Planner\n\nSQL-like Query Optimization",
+      "pv": {
+        "nodeType": "planner",
+        "shape": "diamond",
+        "fill": "#f59e0b",
+        "stroke": "#d97706",
+        "icon": "GitBranch",
+        "sources": ["pixeltable/plan.py"]
+      }
+    },
+    {
+      "id": "expr-engine",
+      "type": "text",
+      "x": 540,
+      "y": 350,
+      "width": 180,
+      "height": 100,
+      "text": "Expression Engine\n\nComputed Columns & Expressions",
+      "pv": {
+        "nodeType": "engine",
+        "shape": "rectangle",
+        "fill": "#06b6d4",
+        "stroke": "#0891b2",
+        "icon": "Calculator",
+        "sources": ["pixeltable/exprs/**"]
+      }
+    },
+    {
+      "id": "execution-engine",
+      "type": "text",
+      "x": 760,
+      "y": 200,
+      "width": 180,
+      "height": 100,
+      "text": "Execution Engine\n\nDistributed Query Execution",
+      "pv": {
+        "nodeType": "engine",
+        "shape": "rectangle",
+        "fill": "#06b6d4",
+        "stroke": "#0891b2",
+        "icon": "Zap",
+        "sources": ["pixeltable/exec/**"]
+      }
+    },
+    {
+      "id": "store",
+      "type": "text",
+      "x": 980,
+      "y": 200,
+      "width": 180,
+      "height": 100,
+      "text": "Data Store\n\nPostgreSQL + pgvector",
+      "pv": {
+        "nodeType": "database",
+        "shape": "rectangle",
+        "fill": "#6366f1",
+        "stroke": "#4f46e5",
+        "icon": "Database",
+        "sources": ["pixeltable/store.py"]
+      }
+    },
+    {
+      "id": "iterators",
+      "type": "text",
+      "x": 540,
+      "y": 500,
+      "width": 180,
+      "height": 100,
+      "text": "Iterators\n\nFrame Extraction, Document Chunking",
+      "pv": {
+        "nodeType": "processor",
+        "shape": "rectangle",
+        "fill": "#84cc16",
+        "stroke": "#65a30d",
+        "icon": "Scissors",
+        "sources": ["pixeltable/iterators/**"]
+      }
+    },
+    {
+      "id": "udf-system",
+      "type": "text",
+      "x": 760,
+      "y": 350,
+      "width": 180,
+      "height": 100,
+      "text": "UDF System\n\nUser-defined Functions",
+      "pv": {
+        "nodeType": "runtime",
+        "shape": "rectangle",
+        "fill": "#ec4899",
+        "stroke": "#db2777",
+        "icon": "Code",
+        "sources": ["pixeltable/func/**"]
+      }
+    },
+    {
+      "id": "function-registry",
+      "type": "text",
+      "x": 760,
+      "y": 500,
+      "width": 180,
+      "height": 100,
+      "text": "Function Registry\n\nAI Model Functions",
+      "pv": {
+        "nodeType": "registry",
+        "shape": "rectangle",
+        "fill": "#f97316",
+        "stroke": "#ea580c",
+        "icon": "Package",
+        "sources": ["pixeltable/functions/**"]
+      }
+    },
+    {
+      "id": "model-executor",
+      "type": "text",
+      "x": 980,
+      "y": 350,
+      "width": 180,
+      "height": 100,
+      "text": "Model Executor\n\nAsync AI Model Execution",
+      "pv": {
+        "nodeType": "executor",
+        "shape": "rectangle",
+        "fill": "#ef4444",
+        "stroke": "#dc2626",
+        "icon": "Play",
+        "sources": ["pixeltable/functions/openai.py", "pixeltable/functions/anthropic.py"]
+      }
+    },
+    {
+      "id": "embedding-index",
+      "type": "text",
+      "x": 980,
+      "y": 500,
+      "width": 180,
+      "height": 100,
+      "text": "Embedding Index\n\nVector Similarity Search",
+      "pv": {
+        "nodeType": "index",
+        "shape": "hexagon",
+        "fill": "#14b8a6",
+        "stroke": "#0d9488",
+        "icon": "Search",
+        "sources": ["pixeltable/index/**"]
+      }
+    },
+    {
+      "id": "file-handlers",
+      "type": "text",
+      "x": 320,
+      "y": 350,
+      "width": 180,
+      "height": 100,
+      "text": "File Handlers\n\nLocal, S3, GCS Storage",
+      "pv": {
+        "nodeType": "adapter",
+        "shape": "rectangle",
+        "fill": "#a855f7",
+        "stroke": "#9333ea",
+        "icon": "HardDrive",
+        "sources": ["pixeltable/io/**"]
+      }
+    },
+    {
+      "id": "export-system",
+      "type": "text",
+      "x": 1200,
+      "y": 200,
+      "width": 180,
+      "height": 100,
+      "text": "Export System\n\nParquet, LanceDB, COCO Export",
+      "pv": {
+        "nodeType": "converter",
+        "shape": "rectangle",
+        "fill": "#0ea5e9",
+        "stroke": "#0284c7",
+        "icon": "Download",
+        "sources": ["pixeltable/io/parquet.py", "pixeltable/io/lancedb.py"]
+      }
+    },
+    {
+      "id": "ml-integrations",
+      "type": "text",
+      "x": 1200,
+      "y": 350,
+      "width": 180,
+      "height": 100,
+      "text": "ML Integrations\n\nFiftyOne, Label Studio",
+      "pv": {
+        "nodeType": "adapter",
+        "shape": "rectangle",
+        "fill": "#a855f7",
+        "stroke": "#9333ea",
+        "icon": "Plug",
+        "sources": ["pixeltable/io/fiftyone.py", "pixeltable/io/label_studio.py"]
+      }
+    },
+    {
+      "id": "incremental-compute",
+      "type": "text",
+      "x": 540,
+      "y": 650,
+      "width": 180,
+      "height": 100,
+      "text": "Incremental Compute\n\nSelective Recomputation",
+      "pv": {
+        "nodeType": "engine",
+        "shape": "rectangle",
+        "fill": "#06b6d4",
+        "stroke": "#0891b2",
+        "icon": "RefreshCw",
+        "sources": ["pixeltable/exec/**"]
+      }
+    },
+    {
+      "id": "result-formatter",
+      "type": "text",
+      "x": 760,
+      "y": 650,
+      "width": 180,
+      "height": 100,
+      "text": "Result Formatter\n\nDataFrame, Pydantic Output",
+      "pv": {
+        "nodeType": "formatter",
+        "shape": "rectangle",
+        "fill": "#22c55e",
+        "stroke": "#16a34a",
+        "icon": "FileText",
+        "sources": ["pixeltable/utils/formatter.py"]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "ui-to-catalog",
+      "fromNode": "user-interface",
+      "toNode": "catalog",
+      "label": "Python API",
+      "pv": {
+        "edgeType": "api"
+      }
+    },
+    {
+      "id": "catalog-to-types",
+      "fromNode": "catalog",
+      "toNode": "type-system",
+      "label": "Type Definitions",
+      "pv": {
+        "edgeType": "dependency"
+      }
+    },
+    {
+      "id": "catalog-to-files",
+      "fromNode": "catalog",
+      "toNode": "file-handlers",
+      "label": "File Access",
+      "pv": {
+        "edgeType": "data"
+      }
+    },
+    {
+      "id": "catalog-to-query",
+      "fromNode": "catalog",
+      "toNode": "query-planner",
+      "label": "Query Requests",
+      "pv": {
+        "edgeType": "query"
+      }
+    },
+    {
+      "id": "query-to-expr",
+      "fromNode": "query-planner",
+      "toNode": "expr-engine",
+      "label": "Expression Evaluation",
+      "pv": {
+        "edgeType": "compute"
+      }
+    },
+    {
+      "id": "query-to-execution",
+      "fromNode": "query-planner",
+      "toNode": "execution-engine",
+      "label": "Execution Plan",
+      "pv": {
+        "edgeType": "query"
+      }
+    },
+    {
+      "id": "expr-to-iterators",
+      "fromNode": "expr-engine",
+      "toNode": "iterators",
+      "label": "Data Processing",
+      "pv": {
+        "edgeType": "compute"
+      }
+    },
+    {
+      "id": "expr-to-udf",
+      "fromNode": "expr-engine",
+      "toNode": "udf-system",
+      "label": "Function Calls",
+      "pv": {
+        "edgeType": "compute"
+      }
+    },
+    {
+      "id": "execution-to-store",
+      "fromNode": "execution-engine",
+      "toNode": "store",
+      "label": "Data Operations",
+      "pv": {
+        "edgeType": "data"
+      }
+    },
+    {
+      "id": "udf-to-functions",
+      "fromNode": "udf-system",
+      "toNode": "function-registry",
+      "label": "Function Lookup",
+      "pv": {
+        "edgeType": "dependency"
+      }
+    },
+    {
+      "id": "functions-to-models",
+      "fromNode": "function-registry",
+      "toNode": "model-executor",
+      "label": "Model Execution",
+      "pv": {
+        "edgeType": "compute"
+      }
+    },
+    {
+      "id": "models-to-embeddings",
+      "fromNode": "model-executor",
+      "toNode": "embedding-index",
+      "label": "Vector Storage",
+      "pv": {
+        "edgeType": "data"
+      }
+    },
+    {
+      "id": "store-to-export",
+      "fromNode": "store",
+      "toNode": "export-system",
+      "label": "Data Export",
+      "pv": {
+        "edgeType": "data"
+      }
+    },
+    {
+      "id": "store-to-ml",
+      "fromNode": "store",
+      "toNode": "ml-integrations",
+      "label": "ML Integration",
+      "pv": {
+        "edgeType": "data"
+      }
+    },
+    {
+      "id": "iterators-to-incremental",
+      "fromNode": "iterators",
+      "toNode": "incremental-compute",
+      "label": "Change Detection",
+      "pv": {
+        "edgeType": "compute"
+      }
+    },
+    {
+      "id": "incremental-to-formatter",
+      "fromNode": "incremental-compute",
+      "toNode": "result-formatter",
+      "label": "Results",
+      "pv": {
+        "edgeType": "data"
+      }
+    },
+    {
+      "id": "formatter-to-ui",
+      "fromNode": "result-formatter",
+      "toNode": "user-interface",
+      "label": "Formatted Results",
+      "pv": {
+        "edgeType": "api"
+      }
+    }
+  ],
+  "pv": {
+    "name": "Pixeltable Architecture",
+    "version": "1.0.0",
+    "description": "Declarative multimodal AI data infrastructure architecture showing core components, data flow, and integrations",
+    "nodeTypes": {
+      "interface": {
+        "label": "Interface",
+        "description": "User interface components",
+        "color": "#3b82f6",
+        "icon": "Terminal",
+        "shape": "rectangle"
+      },
+      "service": {
+        "label": "Service",
+        "description": "Core service components",
+        "color": "#10b981",
+        "icon": "Database",
+        "shape": "rectangle"
+      },
+      "module": {
+        "label": "Module",
+        "description": "System modules",
+        "color": "#8b5cf6",
+        "icon": "Type",
+        "shape": "rectangle"
+      },
+      "planner": {
+        "label": "Planner",
+        "description": "Query planning components",
+        "color": "#f59e0b",
+        "icon": "GitBranch",
+        "shape": "diamond"
+      },
+      "engine": {
+        "label": "Engine",
+        "description": "Processing engines",
+        "color": "#06b6d4",
+        "icon": "Zap",
+        "shape": "rectangle"
+      },
+      "database": {
+        "label": "Database",
+        "description": "Data storage components",
+        "color": "#6366f1",
+        "icon": "Database",
+        "shape": "rectangle"
+      },
+      "processor": {
+        "label": "Processor",
+        "description": "Data processing components",
+        "color": "#84cc16",
+        "icon": "Scissors",
+        "shape": "rectangle"
+      },
+      "runtime": {
+        "label": "Runtime",
+        "description": "Runtime environments",
+        "color": "#ec4899",
+        "icon": "Code",
+        "shape": "rectangle"
+      },
+      "registry": {
+        "label": "Registry",
+        "description": "Function registries",
+        "color": "#f97316",
+        "icon": "Package",
+        "shape": "rectangle"
+      },
+      "executor": {
+        "label": "Executor",
+        "description": "Model executors",
+        "color": "#ef4444",
+        "icon": "Play",
+        "shape": "rectangle"
+      },
+      "index": {
+        "label": "Index",
+        "description": "Indexing components",
+        "color": "#14b8a6",
+        "icon": "Search",
+        "shape": "hexagon"
+      },
+      "adapter": {
+        "label": "Adapter",
+        "description": "Integration adapters",
+        "color": "#a855f7",
+        "icon": "Plug",
+        "shape": "rectangle"
+      },
+      "converter": {
+        "label": "Converter",
+        "description": "Data converters",
+        "color": "#0ea5e9",
+        "icon": "Download",
+        "shape": "rectangle"
+      },
+      "formatter": {
+        "label": "Formatter",
+        "description": "Result formatters",
+        "color": "#22c55e",
+        "icon": "FileText",
+        "shape": "rectangle"
+      }
+    },
+    "edgeTypes": {
+      "api": {
+        "style": "solid",
+        "width": 2,
+        "color": "#3b82f6",
+        "directed": true,
+        "animation": {
+          "type": "flow",
+          "duration": 1000
+        }
+      },
+      "data": {
+        "style": "solid",
+        "width": 2,
+        "color": "#10b981",
+        "directed": true
+      },
+      "compute": {
+        "style": "solid",
+        "width": 2,
+        "color": "#f59e0b",
+        "directed": true
+      },
+      "query": {
+        "style": "solid",
+        "width": 2,
+        "color": "#8b5cf6",
+        "directed": true
+      },
+      "dependency": {
+        "style": "dashed",
+        "width": 1,
+        "color": "#6b7280",
+        "directed": true
+      }
+    },
+    "pathConfig": {
+      "projectRoot": "./",
+      "captureSource": true,
+      "enableActionPatterns": true,
+      "logLevel": "info",
+      "ignoreUnsourced": false
+    },
+    "display": {
+      "layout": "manual",
+      "theme": {
+        "primary": "#3b82f6",
+        "success": "#22c55e",
+        "warning": "#f59e0b",
+        "danger": "#ef4444"
+      },
+      "animations": {
+        "enabled": true,
+        "speed": 1.0
+      }
+    }
+  }
+}
